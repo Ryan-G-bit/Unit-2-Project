@@ -1,0 +1,142 @@
+/*Styles Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*Style Rules for Body*/
+body {
+    background-image:linear-gradient(blanchedalmond, darkblue) ;
+
+    /*Style rules for title*/
+    h1 {
+        text-align: center;
+        font-size: 75pt;
+        text-shadow: 10px 10px #b3b3ff;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    /*Style Rules for Nav*/
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+        display: none;
+    }
+    nav li a{
+        color: #f6eee4;
+        text-decoration: none;
+        font-size: 60pt;
+        background-color: rgba(0, 0, 139, 0.45);
+        font-weight: bold;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger:hover + nav ul{
+        display: block;
+    }
+    nav ul:hover {
+        display:block
+    }
+
+    /*Style Rules for figure*/
+    figure {
+        text-align: center;
+        border-bottom: darkblue solid 5px;
+    }
+    figcaption {
+        font-size: 45pt;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 235, 205, 0.251);
+        margin: 5%;
+    }
+    /*Style Rules for Article*/
+    article {
+        font-size: 45pt;
+        background-color:rgba(222, 184, 135, 0.525);
+        color: black;
+        margin: 5%;
+        border: black solid 10px;
+        padding: 5%;
+        font-family: "Agdasima", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    /*Style Rules for Footer*/
+    footer {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        border: black solid 5px;
+        color: blanchedalmond;
+    }
+}
+/*Media Query for Desktop Viewport*/
+@media only screen and (min-width: 1000px) {
+/*Style Rules for Body*/
+    body {
+        background-image:linear-gradient(blanchedalmond, darkblue) ;
+
+        /*Style rules for title*/
+        h1 {
+            text-align: center;
+            font-size: 30pt;
+            text-shadow: 10px 10px #b3b3ff;
+        }
+        /*Style Rules for Nav*/
+        .hamburger{
+            display: none;
+        }
+        nav ul{
+            list-style-type: none;
+            text-align: center;
+            display: block;
+        }
+        nav li {
+            display: block;
+            background-color: darkblue;
+           color: black;
+           font-weight: bold;
+        }
+        nav li a {
+            display: block;
+            color: #f6eee4;
+            text-decoration: none;
+            font-size: 24pt;
+        }
+        /*Style Rules for figure*/
+        figure {
+            text-align: center;
+            border-bottom: none;
+            margin-top: 5%;
+        }
+        figcaption {
+            font-size: 18pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Style Rules for Article*/
+        article {
+            font-size: 18pt;
+            background-color:rgba(222, 184, 135, 0.491);
+            color: black;
+            border: black solid 10px;
+            padding: 5%;
+            margin: 5%;
+            font-family: "Agdasima", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        /*Style Rules for Footer*/
+        footer {
+            display:block;
+            border: none;
+        }
+        .column {
+            width: 50%;
+            height: 50%;
+            float: left;
+            height: auto;
+        }
+    }    
+}
